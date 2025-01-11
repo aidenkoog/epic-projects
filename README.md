@@ -12,36 +12,36 @@ A collection of templates to discuss and showcase different architectural tools 
 
 - **React Native** Mobile App
 
-  - Project (Javascript): https://github.com/aidenkoog/awesome-app-architecture/tree/master/react_native/ble_comm_app/src
+  - Project (Javascript): https://github.com/aidenkoog/epic-projects/tree/master/react_native/ble_comm_app/src
 
   - Major BLE module
 
-    - Project (Javascript): https://github.com/aidenkoog/awesome-app-architecture/tree/master/react_native/ble_comm_app/src/data
+    - Project (Javascript): https://github.com/aidenkoog/epic-projects/tree/master/react_native/ble_comm_app/src/data
     - Project (Typescript): https://github.com/aidenkoog/beautiful-ble-manager-module
 
 - **React Web** Front-end
 
-  - Project (Javascript): https://github.com/aidenkoog/awesome-app-architecture/tree/master/react_js/admin_web/src
-  - Project (Typescript): https://github.com/aidenkoog/awesome-app-architecture/tree/master/react_js/shopping_mall/src
-  - Project (Typescript): https://github.com/aidenkoog/awesome-app-architecture/tree/master/react_js/webrtc-server-client
-  - Project (Javascript): https://github.com/aidenkoog/awesome-app-architecture/tree/master/react_js/dating-app-ui
+  - Project (Javascript): https://github.com/aidenkoog/epic-projects/tree/master/react_js/admin_web/src
+  - Project (Typescript): https://github.com/aidenkoog/epic-projects/tree/master/react_js/shopping_mall/src
+  - Project (Typescript): https://github.com/aidenkoog/epic-projects/tree/master/react_js/webrtc-server-client
+  - Project (Javascript): https://github.com/aidenkoog/epic-projects/tree/master/react_js/dating-app-ui
   - Websocket module
     - Project (Javascript): https://github.com/aidenkoog/websocket-module/tree/master
 
 - **Homepage**
 
-  - Project (Vanila JS): https://github.com/aidenkoog/awesome-app-architecture/tree/master/vanila_js/my_portfolio
-  - Project (React + Javascript): https://github.com/aidenkoog/awesome-app-architecture/tree/master/react_js/my_portfolio
+  - Project (Vanila JS): https://github.com/aidenkoog/epic-projects/tree/master/vanila_js/my_portfolio
+  - Project (React + Javascript): https://github.com/aidenkoog/epic-projects/tree/master/react_js/my_portfolio
 
 - **Android**
 
-  - Projects: https://github.com/aidenkoog/awesome-app-architecture/tree/master/android
+  - Projects: https://github.com/aidenkoog/epic-projects/tree/master/android
 
 - **Flutter**
 
-  - Project (Web, Dart): https://github.com/aidenkoog/awesome-app-architecture/tree/master/flutter/admin_web
-  - Project (Web, Dart): https://github.com/aidenkoog/awesome-app-architecture/tree/master/flutter/admin_web_desktop
-  - Project (App, Dart): https://github.com/aidenkoog/awesome-app-architecture/tree/master/flutter/userlist
+  - Project (Web, Dart): https://github.com/aidenkoog/epic-projects/tree/master/flutter/admin_web
+  - Project (Web, Dart): https://github.com/aidenkoog/epic-projects/tree/master/flutter/admin_web_desktop
+  - Project (App, Dart): https://github.com/aidenkoog/epic-projects/tree/master/flutter/userlist
 
 #### Description
 
