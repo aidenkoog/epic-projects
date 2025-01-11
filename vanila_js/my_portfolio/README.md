@@ -3,17 +3,7 @@
 - This website showcases my career.
   - Website is based on llie's lecture.
 
-#### Screenshot
-
-- Main Screen
-  <p align="center" style="background-color: #000">
-      <img src="screenshots/home.png" alt="accessibility text">
-  </p>
-  <p align="center" style="background-color: #000">
-      <img src="screenshots/home_mobile.png" alt="accessibility text">
-  </p>
-
-#### Release Note
+### Release Note
 
 - 2023/02/14: Deleted previous source code / Added meta code.
 - 2023/02/14: (2nd) Initialize project (HEAD + related files)
@@ -58,11 +48,22 @@
 - 2023/04/26 : Updated portfolio webpage content / files
 - 2023/04/29 : Updated resume links
 - 2023/05/02 : Added new project links
-- 2023/05/17 : Updated my portfolio project items.
-- 2023/05/17 : Added screenshot images.
+- 2023/05/17 : Updated my portfolio items
+- 2023/05/17 : Fixed issue that my project items are NOT shown properly.
+- 2023/05/17 : Update my project item png images.
+- 2023/05/18 : Added Flutter new project description.
+- 2023/05/23 : Added TIL (Today I Learn) project to my project list.
+- 2023/11/12 : Updated my career information.
+- 2024/02/10 : Added new repository for 2024 dev toy projects.
 
 #### Link:
-
+- My Projects
+  - https://github.com/aidenkoog/awesome-hello-world 
+  - https://github.com/aidenkoog/awesome-til-today-i-learned 
+  - https://github.com/aidenkoog/awesome-programming-practice 
+  - https://github.com/aidenkoog/awesome-app-architecture
+  - https://github.com/aidenkoog/aidenkoog.github.io
+    
 If you are interested in information about me or other activities, please access the link below.
 
 | **Page**        | **LINK**                                             |
