@@ -1,0 +1,26 @@
+[
+    {
+        "family": "GoogleSans",
+        "fonts": [
+            {
+                "asset": "fonts/GoogleSans-Medium.ttf"
+            },
+            {
+                "asset": "fonts/GoogleSans-Regular.ttf",
+                "style": "regular"
+            },
+            {
+                "asset": "fonts/GoogleSans-Bold.ttf",
+                "style": "bold"
+            }
+        ]
+    },
+    {
+        "family": "LineIcons",
+        "fonts": [
+            {
+                "asset": "fonts/LineIcons.ttf"
+            }
+        ]
+    }
+]
