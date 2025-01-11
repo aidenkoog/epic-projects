@@ -38,6 +38,10 @@ A collection of templates to discuss and showcase different architectural tools 
   - Project (Web, Dart): https://github.com/aidenkoog/epic-projects/tree/master/flutter/admin_web
   - Project (Web, Dart): https://github.com/aidenkoog/epic-projects/tree/master/flutter/admin_web_desktop
   - Project (App, Dart): https://github.com/aidenkoog/epic-projects/tree/master/flutter/userlist
+ 
+- **C-Series**
+
+  - Projects: https://github.com/aidenkoog/epic-projects/tree/master/c-series
 
 #### Description
 
