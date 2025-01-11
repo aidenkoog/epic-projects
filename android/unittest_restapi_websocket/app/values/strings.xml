@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KD-API-TestApp</string>
+    <string name="api_test_app_title">UnitTest</string>
+    <string name="smart_plus_uk_app_title">SP-UK</string>
+    <string name="smart_tok_app_title">ST</string>
+    <string name="navien_mate_app_title">NM</string>
+    <string name="navien_airone_app_title">NAO</string>
+    <string name="smart_home_iot_app_title">SHI</string>
+    <string name="iot_video_phone_app_title">IVP</string>
+</resources>
