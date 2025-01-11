@@ -1,9 +1,4 @@
-/* Name: main.c  ver 1.4
- * Content: main ÇÔ¼ö.
- * Implementation: YSW
- * 
- * Last modified 2008/01/01
- */
+
 
 #include "common.h"
 #include "screenOut.h"
@@ -11,23 +6,23 @@
 
 enum {INPUT=1, SHOWALL, SEARCH, DELETE, CHANGE, QUIT};
 
-/* ÇÔ    ¼ö: int main (void)
- * ±â    ´É: »ç¿ëÀÚ ¼±ÅÃ Ã³¸®. 
- * ¹Ý    È¯: Á¤»ó Á¾·á ½Ã 0.
+/* ï¿½ï¿½    ï¿½ï¿½: int main (void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½. 
+ * ï¿½ï¿½    È¯: ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 0.
  *
  */
 int main(void)
 {
     int inputMenu = 0;
 
-    /* ÇÁ·Î±×·¥ ½ÃÀÛ°ú µ¿½Ã¿¡ µ¥ÀÌÅÍ Load! */
+    /* ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½Û°ï¿½ ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Load! */
     //LoadDataFromFile();
     LoadDataFromFileInStruct();
     
     while(1)
     {
         ShowMenu();
-        fputs("¼±ÅÃÇÏ¼¼¿ä: ", stdout);
+        fputs("ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½: ", stdout);
         scanf("%d", &inputMenu);
         fflush(stdin);
   		        
@@ -56,10 +51,10 @@ int main(void)
 		
         if(inputMenu==QUIT)
         {
-            /* ÇÁ·Î±×·¥ Á¾·á½Ã µ¥ÀÌÅÍ Store! */
+            /* ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Store! */
             // StoreDataToFile();
             StoreDataToFileInStruct();
-            puts("ÀÌ¿ëÇØ ÁÖ¼Å¼­ °í¸¶¿ö¿ä~");
+            puts("ï¿½Ì¿ï¿½ï¿½ï¿½ ï¿½Ö¼Å¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½~");
             break;
         }
     }    

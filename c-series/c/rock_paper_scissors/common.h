@@ -8,5 +8,4 @@
 #include <string.h>
 
 #endif
-
 /* end of file */

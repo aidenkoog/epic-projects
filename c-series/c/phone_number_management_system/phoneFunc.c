@@ -1,23 +1,18 @@
-/* Name: phoneFunc.c  ver 1.7
- * Content: ÀüÈ­¹øÈ£ ÄÁÆ®·Ñ ÇÔ¼ö.
- * Implementation: YSW
- * 
- * Last modified 2008/01/01
- */
+
 
 #include "common.h"
 #include "phoneData.h"
 #include "screenOut.h"
-#include "phoneFunc.h"  /* StoreDataToFileInStruct ÇÔ¼öÀÇ È£Ãâ À§ÇØ */
+#include "phoneFunc.h"  /* StoreDataToFileInStruct ï¿½Ô¼ï¿½ï¿½ï¿½ È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 
 #define LIST_NUM   100
 
 int numOfData=0;
 phoneData * phoneList[LIST_NUM];
 
-/* ÇÔ    ¼ö: void InputPhoneData(void)
- * ±â    ´É: ÀüÈ­¹øÈ£ °ü·Ã µ¥ÀÌÅÍ ÀÔ·Â ¹Þ¾Æ¼­ ÀúÀå. 
- * ¹Ý    È¯: void.
+/* ï¿½ï¿½    ï¿½ï¿½: void InputPhoneData(void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½ï¿½È­ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ ï¿½Þ¾Æ¼ï¿½ ï¿½ï¿½ï¿½ï¿½. 
+ * ï¿½ï¿½    È¯: void.
  *
  */
 void InputPhoneData(void)
@@ -27,16 +22,16 @@ void InputPhoneData(void)
     
     if(numOfData>=LIST_NUM)
     {
-        puts("¸Þ¸ð¸® °ø°£ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
+        puts("ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
         return;
     }
     
     pData = (phoneData *)malloc(sizeof(phoneData));
 
-    fputs("ÀÌ¸§ ÀÔ·Â: ", stdout);
+    fputs("ï¿½Ì¸ï¿½ ï¿½Ô·ï¿½: ", stdout);
     gets(pData->name);
     
-    fputs("ÀüÈ­¹øÈ£ ÀÔ·Â: ", stdout);
+    fputs("ï¿½ï¿½È­ï¿½ï¿½È£ ï¿½Ô·ï¿½: ", stdout);
     gets(pData->phoneNum);
 
     for(i=0; i<numOfData; i++)
@@ -44,7 +39,7 @@ void InputPhoneData(void)
         if( !strcmp(phoneList[i]->name, pData->name) &&
             !strcmp(phoneList[i]->phoneNum, pData->phoneNum) )
         {
-            puts("ÀÌ¹Ì ÀÔ·ÂµÈ µ¥ÀÌÅÍ ÀÔ´Ï´Ù.");
+            puts("ï¿½Ì¹ï¿½ ï¿½Ô·Âµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.");
             free(pData);
             getchar();
             return;
@@ -54,16 +49,16 @@ void InputPhoneData(void)
     phoneList[numOfData]=pData;
     numOfData++;
     
-    /* ÆÄÀÏ °»½Å */
+    /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
     StoreDataToFileInStruct();
 
-    puts("ÀÔ·ÂÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+    puts("ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
     getchar();
 }
 
-/* ÇÔ    ¼ö: void ShowAllData(void)
- * ±â    ´É: ÀúÀåµÈ µ¥ÀÌÅÍ ÀüÃ¼ Ãâ·Â. 
- * ¹Ý    È¯: void.
+/* ï¿½ï¿½    ï¿½ï¿½: void ShowAllData(void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½. 
+ * ï¿½ï¿½    È¯: void.
  *
  */
 void ShowAllData(void)
@@ -75,22 +70,22 @@ void ShowAllData(void)
         ShowPhoneInfoByPtr(phoneList[i]);
     }
     
-    puts("Ãâ·ÂÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+    puts("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
     getchar();
 }
 
-/* ÇÔ    ¼ö: void SearchPhoneData(void)
- * ±â    ´É: ÀÌ¸§À» ÅëÇÑ µ¥ÀÌÅÍ °Ë»ö. 
- * ¹Ý    È¯: void.
+/* ï¿½ï¿½    ï¿½ï¿½: void SearchPhoneData(void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½. 
+ * ï¿½ï¿½    È¯: void.
  *
  */
 void SearchPhoneData(void)
 {
     int i;
-    int searchSte=0;  // Ã£À¸¸é 1, ¸ø Ã£À¸¸é 0
+    int searchSte=0;  // Ã£ï¿½ï¿½ï¿½ï¿½ 1, ï¿½ï¿½ Ã£ï¿½ï¿½ï¿½ï¿½ 0
     char searchName[NAME_LEN];
     
-    fputs("Ã£´Â ÀÌ¸§Àº? ", stdout);
+    fputs("Ã£ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½? ", stdout);
     gets(searchName);
     
     for(i=0; i<numOfData; i++)
@@ -102,17 +97,17 @@ void SearchPhoneData(void)
         }
     }
     
-    if(searchSte==0)  // ÇÏ³ªµµ Ã£Áö ¸øÇß´Ù¸é
-        puts("Ã£´Â ÀÌ¸§ÀÇ µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+    if(searchSte==0)  // ï¿½Ï³ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ï¿½ß´Ù¸ï¿½
+        puts("Ã£ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.");
     else
-        puts("°Ë»öÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+        puts("ï¿½Ë»ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 	
     getchar();
 }
 
-/* ÇÔ    ¼ö: void DeletePhoneData(void)
- * ±â    ´É: ÀÌ¸§À» ÂüÁ¶ÇÏ¿© µ¥ÀÌÅÍ »èÁ¦. 
- * ¹Ý    È¯: void.
+/* ï¿½ï¿½    ï¿½ï¿½: void DeletePhoneData(void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. 
+ * ï¿½ï¿½    È¯: void.
  *
  */
 void DeletePhoneData(void)
@@ -125,7 +120,7 @@ void DeletePhoneData(void)
     int selection=0;
     int delIdx=0;
     
-    fputs("Ã£´Â ÀÌ¸§Àº? ", stdout);
+    fputs("Ã£ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½? ", stdout);
     gets(delName);
 
     for(i=0; i<numOfData; i++)
@@ -136,7 +131,7 @@ void DeletePhoneData(void)
     
     if(matchedCount==0)
     {
-        puts("Ã£´Â ÀÌ¸§ÀÇ µ¥ÀÌÅÍ°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+        puts("Ã£ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.");
         getchar();
         return;
     }
@@ -152,7 +147,7 @@ void DeletePhoneData(void)
             ShowPhoneInfoByPtr(phoneList[idxOfMatchingData[i]]);
         }
         
-        fputs("¼±ÅÃ: ", stdout);
+        fputs("ï¿½ï¿½ï¿½ï¿½: ", stdout);
         scanf("%d", &selection);
         fflush(stdin);
 
@@ -167,17 +162,17 @@ void DeletePhoneData(void)
     }
     numOfData--;
 
-    /* ÆÄÀÏ °»½Å */
+    /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
     StoreDataToFileInStruct();
 
-    puts("»èÁ¦°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+    puts("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
     getchar();
 }
 
 
-/* ÇÔ    ¼ö: void ChangePhoneData(void)
- * ±â    ´É: ÀÌ¸§À» ÂüÁ¶ÇÏ¿© ÀüÈ­¹øÈ£ º¯°æ. 
- * ¹Ý    È¯: void.
+/* ï¿½ï¿½    ï¿½ï¿½: void ChangePhoneData(void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½È­ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½. 
+ * ï¿½ï¿½    È¯: void.
  *
  */
 void ChangePhoneData(void)
@@ -191,7 +186,7 @@ void ChangePhoneData(void)
     int selection=0;
     int delIdx=0;
     
-    fputs("º¯°æ ´ë»óÀÇ ÀÌ¸§Àº? ", stdout);
+    fputs("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½? ", stdout);
     gets(serchName);
      
     
@@ -203,7 +198,7 @@ void ChangePhoneData(void)
     
     if(matchedCount==0)
     {
-        puts("º¯°æ ´ë»ó ÀÌ¸§ÀÌ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+        puts("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.");
         getchar();
         return;
     }
@@ -219,28 +214,28 @@ void ChangePhoneData(void)
             ShowPhoneInfoByPtr(phoneList[idxOfMatchingData[i]]);
         }
         
-        fputs("¼±ÅÃ: ", stdout);
+        fputs("ï¿½ï¿½ï¿½ï¿½: ", stdout);
         scanf("%d", &selection);
         fflush(stdin);
 
         delIdx=idxOfMatchingData[selection-1];
     }
 
-    fputs("º¯°æÇÒ ÀüÈ­¹øÈ£´Â? ", stdout);
+    fputs("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½È£ï¿½ï¿½? ", stdout);
     gets(newPhoneNumber);
     strcpy(phoneList[delIdx]->phoneNum, newPhoneNumber);
 
-    /* ÆÄÀÏ °»½Å */
+    /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
     StoreDataToFileInStruct();
 
-    puts("º¯°æÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+    puts("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
     getchar();
 }
 
 
-/* ÇÔ    ¼ö: void StoreDataToFile(void)
- * ±â    ´É: ¸ðµç µ¥ÀÌÅÍ ÆÄÀÏ¿¡ ÀúÀå. 
- * ¹Ý    È¯: void.
+/* ï¿½ï¿½    ï¿½ï¿½: void StoreDataToFile(void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½. 
+ * ï¿½ï¿½    È¯: void.
  *
  */
 void StoreDataToFile(void)
@@ -248,10 +243,10 @@ void StoreDataToFile(void)
     int i;
     FILE * fp=fopen("phoneData.dat", "w");
     
-    fwrite(&numOfData, sizeof(int), 1, fp);  // µ¥ÀÌÅÍ ÃÑ °³¼ö.
+    fwrite(&numOfData, sizeof(int), 1, fp);  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
     for(i=0; i<numOfData; i++)
     {
-        /* ¹®ÀÚ¿­À» ±¸ºÐ Áþ´Â ¹®ÀÚ \nÀÇ »ðÀÔ Áß¿ä! */
+        /* ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ \nï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß¿ï¿½! */
         fprintf(fp, "%s\n%s\n", phoneList[i]->name, phoneList[i]->phoneNum);
         free(phoneList[i]);
     }
@@ -259,16 +254,16 @@ void StoreDataToFile(void)
     fclose(fp);
 }
 
-/* ÇÔ    ¼ö: void StoreDataToFileInStruct(void)
- * ±â    ´É: ¸ðµç µ¥ÀÌÅÍ ÆÄÀÏ¿¡ ±¸Á¶Ã¼ º¯¼ö ´ÜÀ§·Î ÀúÀå
- * ¹Ý    È¯: void
+/* ï¿½ï¿½    ï¿½ï¿½: void StoreDataToFileInStruct(void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½    È¯: void
  *
  */
 void StoreDataToFileInStruct(void)
 {
     int i;
 
-    FILE * fp=fopen("phoneDataStruct.dat", "wb");  // ÆÄÀÏ »õ·Î »ý¼º.
+    FILE * fp=fopen("phoneDataStruct.dat", "wb");  // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
     
     fwrite(&numOfData, sizeof(int), 1, fp);
 
@@ -280,16 +275,16 @@ void StoreDataToFileInStruct(void)
     fclose(fp);
 }
 
-/* ÇÔ    ¼ö: void LoadDataFromFile(void)
- * ±â    ´É: ¸ðµç µ¥ÀÌÅÍ ÆÄÀÏ·ÎºÎÅÍ º¹¿ø. 
- * ¹Ý    È¯: void.
+/* ï¿½ï¿½    ï¿½ï¿½: void LoadDataFromFile(void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï·Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. 
+ * ï¿½ï¿½    È¯: void.
  *
  */
 void LoadDataFromFile(void)
 {
     int i, sLen;
     FILE * fp=fopen("phoneData.dat", "r");
-    if(fp==NULL)  // ÆÄÀÏÀÌ Á¸ÀçÇÏÁö ¾Ê´Â´Ù¸é.
+    if(fp==NULL)  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´Ù¸ï¿½.
         return;
     
     fread(&numOfData, sizeof(int), 1, fp);
@@ -299,22 +294,22 @@ void LoadDataFromFile(void)
         phoneList[i]=(phoneData*)malloc(sizeof(phoneData));
         fgets(phoneList[i]->name, NAME_LEN, fp);
         
-        /* ¹®ÀÚ¿­ ±¸ºÐÀ» À§ÇØ ÀÔ·ÂµÈ NULL ¹®ÀÚ »èÁ¦ */
+        /* ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Âµï¿½ NULL ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
         sLen=strlen(phoneList[i]->name);
         phoneList[i]->name[sLen-1]=0;
         
         fgets(phoneList[i]->phoneNum, PHONE_LEN, fp);
         
-        /* ¹®ÀÚ¿­ ±¸ºÐÀ» À§ÇØ ÀÔ·ÂµÈ NULL ¹®ÀÚ »èÁ¦ */
+        /* ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Âµï¿½ NULL ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
         sLen=strlen(phoneList[i]->phoneNum);
         phoneList[i]->phoneNum[sLen-1]=0;
     }
     fclose(fp);
 }
 
-/* ÇÔ    ¼ö: void LoadDataFromFileInStruct(void)
- * ±â    ´É: ¸ðµç µ¥ÀÌÅÍ ÆÄÀÏ·ÎºÎÅÍ ±¸Á¶Ã¼ º¯¼ö ´ÜÀ§·Î º¹¿ø
- * ¹Ý    È¯: void
+/* ï¿½ï¿½    ï¿½ï¿½: void LoadDataFromFileInStruct(void)
+ * ï¿½ï¿½    ï¿½ï¿½: ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï·Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½    È¯: void
  *
  */
 void LoadDataFromFileInStruct(void)
@@ -323,7 +318,7 @@ void LoadDataFromFileInStruct(void)
     
     FILE * fp=fopen("phoneDataStruct.dat", "rb");
     
-    if(fp==NULL)  // ÆÄÀÏÀÌ Á¸ÀçÇÏÁö ¾Ê´Â´Ù¸é.
+    if(fp==NULL)  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´Ù¸ï¿½.
         return;
     
     fread(&numOfData, sizeof(int), 1, fp);
