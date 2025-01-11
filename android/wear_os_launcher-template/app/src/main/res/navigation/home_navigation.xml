@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/homeMainFragment">
+
+    <fragment
+        android:id="@+id/homeMainFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.HomeMainFragment"
+        android:label="HomeMainFragment"
+        tools:layout="@layout/fragment_home_main">
+        <action
+            android:id="@+id/action_homeMainFragment_to_stepFragment"
+            app:destination="@id/stepFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_sleepFragment"
+            app:destination="@id/sleepFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_hrFragment"
+            app:destination="@id/hrFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_rhrFragment"
+            app:destination="@id/rhrFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_hiddenFragment"
+            app:destination="@id/hiddenFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_healthServiceSplashFragment"
+            app:destination="@id/healthServiceSplashFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/stepFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.feature.StepFragment"
+        android:label="StepFragment"
+        tools:layout="@layout/fragment_step" />
+
+    <fragment
+        android:id="@+id/sleepFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.feature.SleepFragment"
+        android:label="SleepFragment"
+        tools:layout="@layout/fragment_sleep" />
+
+    <fragment
+        android:id="@+id/hrFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.feature.HrFragment"
+        android:label="HrFragment"
+        tools:layout="@layout/fragment_hr" />
+
+    <fragment
+        android:id="@+id/rhrFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.feature.RhrFragment"
+        android:label="RhrFragment"
+        tools:layout="@layout/fragment_rhr" />
+
+    <fragment
+        android:id="@+id/hiddenFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.hidden.HiddenFragment"
+        android:label="HiddenFragment"
+        tools:layout="@layout/fragment_hidden" />
+
+    <fragment
+        android:id="@+id/healthServiceSplashFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.health_service.HealthServiceSplashFragment"
+        android:label="HealthServiceSplashFragment"
+        tools:layout="@layout/fragment_health_service_splash">
+        <action
+            android:id="@+id/action_healthServiceSplashFragment_to_healthServicePrepareFragment"
+            app:destination="@id/healthServicePrepareFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_healthServiceSplashFragment_to_healthServiceNotAvailableFragment"
+            app:destination="@id/healthServiceNotAvailableFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/healthServiceNotAvailableFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.health_service.HealthServiceNoAvailableFragment"
+        android:label="HealthServiceNotAvailableFragment"
+        tools:layout="@layout/fragment_health_service_not_available" />
+
+    <fragment
+        android:id="@+id/healthServicePrepareFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.health_service.HealthServicePrepareFragment"
+        android:label="HealthServicePrepareFragment"
+        tools:layout="@layout/fragment_health_service_preparing">
+        <action
+            android:id="@+id/action_healthServicePrepareFragment_to_healthServiceExerciseFragment"
+            app:destination="@id/healthServiceExerciseFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/healthServiceExerciseFragment"
+        android:name="io.github.aidenkoog.android_wear_os.presentation.home.fragment.health_service.HealthServiceExerciseFragment"
+        android:label="HealthServiceExerciseFragment"
+        tools:layout="@layout/fragment_health_service_exercise" />
+</navigation>

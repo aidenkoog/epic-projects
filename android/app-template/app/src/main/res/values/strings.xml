@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">app template</string>
+
+    <!-- screen debug text -->
+    <string name="intro_screen_text">Hello World AidenKooG (Intro)!</string>
+    <string name="home_screen_text">Hello World AidenKooG (Home)!</string>
+    <string name="home_btn_text">TEST BTN</string>
+
+    <string name="btn_click_test_toast_msg">버튼 클릭 테스트</string>
+
+    <!-- dialog -->
+    <string name="label_close">닫기</string>
+    <string name="label_cancel">취소</string>
+    <string name="view_detail">자세히 보기</string>
+    <string name="label_ok">확인</string>
+
+</resources>

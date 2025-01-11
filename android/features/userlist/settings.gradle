@@ -1,0 +1,6 @@
+include ':app'
+include ':musicplayer'
+include ':coroutine_flow'
+include ':player_library'
+include ':ktorclient'
+include ':compose_app'

@@ -1,0 +1,22 @@
+<resources>
+    <!--
+        [ Custom Watch Launcher ]
+    -->
+    <!-- Base application theme. -->
+    <style name="Theme.AndroidArchitecture" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <!--
+        [ Custom Watch Face ]
+    -->
+</resources>

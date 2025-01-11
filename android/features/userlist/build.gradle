@@ -1,0 +1,40 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.anko_version = '0.10.8'
+    ext.daggerLibVersion = "2.28.3"
+    ext.daggerAndroidLibVersion = "2.28.3"
+    ext.room_version = "1.1.1"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0'
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.43.2'
+        classpath 'com.google.android.gms:oss-licenses-plugin:0.10.6'
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath "org.jetbrains.kotlin:kotlin-serialization:1.8.0"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3"
+    }
+}
+
+plugins {
+    id "org.jlleitschuh.gradle.ktlint" version "10.0.0"
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+    id 'com.google.dagger.hilt.android' version '2.42' apply false
+}
+
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
