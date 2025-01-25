@@ -1,8 +1,8 @@
 ## Epic Projects
 
-A collection of templates to discuss and showcase different architectural tools and patterns for apps in different languages.
-
-- It is a project that develops the source code gradually through the application of coding conventions and clean architecture after writing apps in various types of languages.
+- (~ 2024) Awesome Projects
+- (2025 ~) Epic Projects
+- I develop well-structured source code for each domain, reusable utility functions, and library-ized source code, and analyze several good project sources.
 
 #### Template source code.
 
