@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/chatroom_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		
+        <TextView 
+            android:id="@+id/chatroom_countOfPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <TextView 
+            android:id="@+id/chatroom_nameOfPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="308dp"
+        android:layout_weight="0.56" 
+        android:transcriptMode="alwaysScroll"
+        android:listSelector="@drawable/listview_selector">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/msgEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" 
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:scrollbars="vertical"
+            android:background="@drawable/msg_bg">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:onClick="sendMsg"
+            android:background="@drawable/send_btn"/>
+    </LinearLayout>
+
+</LinearLayout>

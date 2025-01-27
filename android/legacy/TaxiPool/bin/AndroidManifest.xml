@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taxiclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+<uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/taxi_icon"
+        android:label="TaxiPool"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.taxiclient.MainActivity"
+            android:label="TaxiPool" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.taxiclient.RoomListActivity" >
+        </activity>
+        <activity
+            android:name="com.example.taxiclient.ChatRoomActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.example.taxiclient.IntroActivity" >
+        </activity>
+        <activity android:name="com.example.taxiclient.CreateRoomFormActivity" >
+        </activity>
+        <activity android:name="com.example.taxiclient.RegisterUserFormActivity" >
+        </activity>
+        <activity android:name="com.example.taxiclient.LogInActivity" >
+        </activity>
+        <activity
+            android:name="com.example.taxiclient.PopUpActivity"
+            android:excludeFromRecents="true"
+            android:taskAffinity="com.example.taxiclient.popup"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <service
+            android:name="com.example.taxiclient.service.MyService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name="com.example.taxiclient.BBBGame" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            
+        </activity>
+    </application>
+
+</manifest>
