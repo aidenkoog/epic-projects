@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="261" key="DIALOG_WIDTH"/>
+		<item value="225" key="DIALOG_Y_ORIGIN"/>
+		<item value="1007" key="DIALOG_X_ORIGIN"/>
+		<item value="388" key="DIALOG_HEIGHT"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="" key="selection"/>
+		<list key="findhistory">
+			<item value="스샷"/>
+			<item value="스크린"/>
+			<item value="blank"/>
+			<item value="mi_Room_sendfile"/>
+			<item value="mi_Room_instantMsg"/>
+			<item value="mi_Room_chat"/>
+			<item value="mi_Room_invite"/>
+			<item value="menu_Room_filemenu"/>
+		</list>
+		<list key="replacehistory">
+			<item value="sendFileMenu"/>
+			<item value="sendFileMenuItem"/>
+			<item value="instantMsgMenuItem"/>
+			<item value="chatMenuItem"/>
+			<item value="inviteMenuItem"/>
+			<item value="fileMenu"/>
+			<item value="okButton"/>
+			<item value="createSearchForm"/>
+		</list>
+	</section>
+</section>

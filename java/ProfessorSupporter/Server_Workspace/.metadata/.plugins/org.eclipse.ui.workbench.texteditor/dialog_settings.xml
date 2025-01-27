@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="261" key="DIALOG_WIDTH"/>
+		<item value="259" key="DIALOG_Y_ORIGIN"/>
+		<item value="381" key="DIALOG_HEIGHT"/>
+		<item value="718" key="DIALOG_X_ORIGIN"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="감시" key="selection"/>
+		<list key="findhistory">
+			<item value="감시"/>
+			<item value="원격"/>
+			<item value="Login"/>
+			<item value="학생삭제화면콤보박스"/>
+			<item value="isUpdate"/>
+			<item value="deleteServiceStatement"/>
+			<item value="학생수정화면콤보박스세팅"/>
+			<item value="updateServiceStatement"/>
+		</list>
+		<list key="replacehistory">
+			<item value="isDelete"/>
+			<item value="deleteStatement"/>
+			<item value="updateStatement"/>
+			<item value=""/>
+			<item value="findNameStatement"/>
+			<item value="Student"/>
+			<item value="sendMessage"/>
+			<item value="MainFrame"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="247" key="DIALOG_Y_ORIGIN"/>
+		<item value="452" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>
