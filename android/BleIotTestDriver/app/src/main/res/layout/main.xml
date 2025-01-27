@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/blue"
+        android:textSize="24dp" />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="@string/btn_start" />
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="@string/btn_stop" />
+    <Button
+        android:id="@+id/end"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="@string/btn_end" />
+</LinearLayout>
