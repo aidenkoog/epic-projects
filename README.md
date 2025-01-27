@@ -48,7 +48,7 @@
   - Projects: [FeatureCompareTool](https://github.com/aidenkoog/epic-projects/tree/master/FeatureCompareTool)
   - Projects: [ProfessorSupporter](https://github.com/aidenkoog/epic-projects/tree/master/ProfessorSupporter)
   - Projects: [PhoneBookSystem](https://github.com/aidenkoog/epic-projects/tree/master/PhoneBookSystem)
-  - Projects: [BLE-IoT-Test-Driver](https://github.com/aidenkoog/epic-projects/tree/master/BleIotTestDriver)
+  - Projects: [IoT-Test-Driver](https://github.com/aidenkoog/epic-projects/tree/master/IotTestDriver)
 
 - **SpringBoot**
 

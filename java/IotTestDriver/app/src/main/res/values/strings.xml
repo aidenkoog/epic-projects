@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BleIoT</string>
+    <string name="title">BleIoT Emulator</string>
+    <string name="btn_start">Start BleIoT Service</string>
+    <string name="btn_stop">Stop BleIoT Service</string>
+    <string name="btn_end">Finish BleIoT</string>
+    <string name="status_idle">IDLE</string>
+    <string name="btn_command">SOS</string>
+</resources>
