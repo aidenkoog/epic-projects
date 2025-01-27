@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.PaintListener"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.PaintEvent"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Rectangle"/>
+<fullyQualifiedTypeName name="SimilarityCheckScreen"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Canvas"/>
+<fullyQualifiedTypeName name="MappingCanvas"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Group"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Composite"/>
+<fullyQualifiedTypeName name="javax.swing.ButtonGroup"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.events.SelectionAdapter"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="DataBase.DBConnection"/>
+<fullyQualifiedTypeName name="DataBase.ServiceQueries"/>
+<fullyQualifiedTypeName name="DataBase.DBWork_Delete"/>
+<fullyQualifiedTypeName name="DataBase.DBWork"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>
