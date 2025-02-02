@@ -1,16 +1,7 @@
 ## Android Projects
 
 - Summary
-    - custom-dream-template
-    - features (apps)
-    - ipc-aidl-template
-    - review_ongoing
-    - testapp_template
-    - wear_os_launcher-template
-    - webapp_template
-    - app-template
-    - rx-android-ble-practice
-    - websocket-module
+    - Under construction. Now, all project source code is under review.
 
 #### Link
 
