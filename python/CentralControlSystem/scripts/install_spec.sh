@@ -1,1 +1,1 @@
-pip install -r pubspec.txt
+pip install -r ../pubspec.txt
