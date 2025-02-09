@@ -57,6 +57,10 @@
 
   - Projects: [Hello-World-All-Langs](https://github.com/aidenkoog/epic-projects/tree/master/hello-world-all)
 
+- **Python**
+
+  - Projects: [Python Server - Central Control System](https://github.com/aidenkoog/epic-projects/tree/master/python/CentralControlSystem)
+
 #### Description
 
 To explain this project in more detail, it is a project that creates a simple app from HTTP, database, and login to the main screen, then considers the reusability of each module, creates a structure, and continuously develops the source code structure. .
