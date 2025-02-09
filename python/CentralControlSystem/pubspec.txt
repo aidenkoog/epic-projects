@@ -7,4 +7,3 @@ pyserial
 websockets
 asyncio
 sqlite3
-
