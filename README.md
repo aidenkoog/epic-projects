@@ -45,9 +45,10 @@
 
 - **Java**
 
-  - Projects: [FeatureCompareTool](https://github.com/aidenkoog/epic-projects/tree/master/FeatureCompareTool)
-  - Projects: [ProfessorSupporter](https://github.com/aidenkoog/epic-projects/tree/master/ProfessorSupporter)
-  - Projects: [PhoneBookSystem](https://github.com/aidenkoog/epic-projects/tree/master/PhoneBookSystem)
+  - Projects: [AlkanoidFighter](https://github.com/aidenkoog/epic-projects/tree/master/java/AlkanoidFighter)
+  - Projects: [FeatureCompareTool](https://github.com/aidenkoog/epic-projects/tree/master/java/FeatureCompareTool)
+  - Projects: [ProfessorSupporter](https://github.com/aidenkoog/epic-projects/tree/master/java/ProfessorSupporter)
+  - Projects: [PhoneBookSystem](https://github.com/aidenkoog/epic-projects/tree/master/java/PhoneBookSystem)
 
 - **SpringBoot**
 
