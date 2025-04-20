@@ -1,6 +1,0 @@
-<resources>
-    <style name="Theme.Showcase" parent="Theme.Material3.DynamicColors.DayNight">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-</resources>
