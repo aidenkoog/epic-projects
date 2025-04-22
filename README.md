@@ -38,7 +38,8 @@
   - Project (Web, Dart): [Admin-Web](https://github.com/aidenkoog/epic-projects/tree/master/flutter/admin_web)
   - Project (Web, Dart): [Admin-Desktop](https://github.com/aidenkoog/epic-projects/tree/master/flutter/admin_web_desktop)
   - Project (App, Dart): [Userlist App](https://github.com/aidenkoog/epic-projects/tree/master/flutter/userlist)
- 
+  - Project (App, Dart): [Medicine Alarm App](https://github.com/aidenkoog/epic-projects/tree/master/flutter/medicine_alarm)
+
 - **C-Series**
 
   - Projects: [C-C++ Projects](https://github.com/aidenkoog/epic-projects/tree/master/c-series)
