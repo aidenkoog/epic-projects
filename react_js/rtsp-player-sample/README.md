@@ -68,11 +68,3 @@ It's mandantory to set up the development environment and build the app by follo
       - Change package.json's ios setting: // "ios": "react-native run-ios", ==> "ios": "react-native run-ios --device='AidenKooG'",
       - Please check if mobile phone's developer mode is turned on.
 
-#### Link:
-
-If you are interested in information about me or other activities, please access the link below.
-
-| **Page**        | **LINK**                                             |
-| --------------- | ---------------------------------------------------- |
-| **Github page** | [https://aidenkoog.github.io/]                       |
-| **LinkedIn**    | [https://www.linkedin.com/in/dongwan-koo-2041bb13b/] |
