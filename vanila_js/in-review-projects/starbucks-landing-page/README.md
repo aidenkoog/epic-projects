@@ -15,10 +15,3 @@
   - Added hello world text and material ui for testing.
 - 2023/03/24: Added header container and logo image.
 
-#### Link
-
-If you are interested in information about me or other activities, please access the link below.
-
-| Plugin      | LINK                           |
-| ----------- | ------------------------------ |
-| Github page | [https://aidenkoog.github.io/] |
