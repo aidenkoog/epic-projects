@@ -56,17 +56,3 @@
 - 2023/11/12 : Updated my career information.
 - 2024/02/10 : Added new repository for 2024 dev toy projects.
 
-#### Link:
-- My Projects
-  - https://github.com/aidenkoog/awesome-hello-world 
-  - https://github.com/aidenkoog/awesome-til-today-i-learned 
-  - https://github.com/aidenkoog/awesome-programming-practice 
-  - https://github.com/aidenkoog/awesome-app-architecture
-  - https://github.com/aidenkoog/aidenkoog.github.io
-    
-If you are interested in information about me or other activities, please access the link below.
-
-| **Page**        | **LINK**                                             |
-| --------------- | ---------------------------------------------------- |
-| **Github page** | [https://aidenkoog.github.io/]                       |
-| **LinkedIn**    | [https://www.linkedin.com/in/dongwan-koo-2041bb13b/] |
