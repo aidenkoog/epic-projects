@@ -80,10 +80,3 @@ It's mandantory to set up the development environment and build the app by follo
  $ flutter run -d windows # for windows
 ```
 
-#### Link
-
-If you are interested in information about me or other activities, please access the link below.
-
-| Plugin      | LINK                           |
-| ----------- | ------------------------------ |
-| Github page | [https://aidenkoog.github.io/] |
