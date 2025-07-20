@@ -25,11 +25,3 @@ It is written based on Java.
 
 - 2023/02/21 : Upload Android-AIDL-Service-Manager template source code (Ref. cannot compile)
 - 2023/02/23 : Fix compile errors of testapp and service main app.
-
-#### Link
-
-If you are interested in information about me or other activities, please access the link below.
-
-| Plugin      | LINK                                     |
-| ----------- | ---------------------------------------- |
-| Github page | [https://aidenkoog.github.io/] |
