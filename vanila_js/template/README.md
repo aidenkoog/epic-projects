@@ -50,10 +50,3 @@ Make Vanila JS webpage with technology, HTML + CSS + Vanila JS
 - 2023/04/30: Changed main logo image and its size.
 - 2023/05/17: Added screenshot images.
 
-#### Link
-
-If you are interested in information about me or other activities, please access the link below.
-
-| Plugin      | LINK                           |
-| ----------- | ------------------------------ |
-| Github page | [https://aidenkoog.github.io/] |
