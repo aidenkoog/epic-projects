@@ -10,10 +10,3 @@
 #### Release Note
 - 2023/03/11: Uploaded initial project.
 
-#### Link
-
-If you are interested in information about me or other activities, please access the link below.
-
-| Plugin      | LINK                           |
-| ----------- | ------------------------------ |
-| Github page | [https://aidenkoog.github.io/] |
