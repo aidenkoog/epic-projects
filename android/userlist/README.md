@@ -49,11 +49,3 @@ It is written based on Kotlin.
 - 2023/05/18 : Finished api service implementation.
 - 2023/05/18 : Initialized compose app project and added ui compose code (but currently cannot build
   it because of dependency version issue)
-
-#### Link
-
-If you are interested in information about me or other activities, please access the link below.
-
-| Plugin      | LINK                           |
-| ----------- | ------------------------------ |
-| Github page | [https://aidenkoog.github.io/] |
