@@ -40,11 +40,3 @@ It's mandantory to set up the development environment and build the app by follo
 - yarn install
 - npm start
 
-#### Link:
-
-If you are interested in information about me or other activities, please access the link below.
-
-| **Page**        | **LINK**                                             |
-| --------------- | ---------------------------------------------------- |
-| **Github page** | [https://aidenkoog.github.io/]                       |
-| **LinkedIn**    | [https://www.linkedin.com/in/dongwan-koo-2041bb13b/] |
